@@ -11,15 +11,14 @@ class CardGame
     @cards = []
   end
 
-  def check_for_ace(cards)
-    for card in cards
-      if card.value = 1
+  def check_for_ace(card)
+      if card.value == 1
         return true
       else
         return false
       end
     end
-  end
+
 
 
   def highest_card(card1, card2)
@@ -34,8 +33,8 @@ class CardGame
     total = 0
     for card in cards
       total += card.value
-      return "You have a total of" + total
     end
+      return "You have a total of" + total
   end
 
 end

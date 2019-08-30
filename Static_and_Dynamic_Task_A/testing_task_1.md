@@ -11,15 +11,15 @@ class CardGame
     if card.value = 1 #should be == instead of = also no method for .value
       return true
     else
-      return false #this is unnecessary as if the card.value isn't true it will be false by default
+      return false
     end
   end
 
   dif highest_card(card1 card2) #dif should be def, should be a comma between card1 and card 2
-  if card1.value > card2.value #no method for .value
+  if card1.value > card2.value
     return card #card is undefined in the parameters, should be card1
   else
-    return card2
+    return card2 
   end
 end
 end  #this end is closing the class CardGame prematurely
