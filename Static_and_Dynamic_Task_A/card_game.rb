@@ -11,11 +11,13 @@ class CardGame
     @cards = []
   end
 
-  def check_for_ace(card)
-    if card.value = 1
-      return true
-    else
-      return false
+  def check_for_ace(cards)
+    for card in cards
+      if card.value = 1
+        return true
+      else
+        return false
+      end
     end
   end
 
@@ -29,7 +31,7 @@ class CardGame
   end
 
   def self.cards_total(cards)
-    total = cards.length
+    total = 0
     for card in cards
       total += card.value
       return "You have a total of" + total
